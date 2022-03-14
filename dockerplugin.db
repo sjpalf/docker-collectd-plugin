@@ -1,4 +1,5 @@
-blkio                   read:COUNTER:0:U, write:COUNTER:0:U, sync:COUNTER:0:U, async:COUNTER:0:U, total:COUNTER:0:U
+blkio                   read:COUNTER:0:U, write:COUNTER:0:U, sync:COUNTER:0:U, async:COUNTER:0:U, discard:COUNTER:0:U, total:COUNTER:0:U
+blkio.old               read:COUNTER:0:U, write:COUNTER:0:U, sync:COUNTER:0:U, async:COUNTER:0:U, total:COUNTER:0:U
 blkio.single            value:COUNTER:0:U
 cpu.percpu.usage        value:COUNTER:0:U
 cpu.usage               total:COUNTER:0:U, kernelmode:COUNTER:0:U, usermode:COUNTER:0:U, system:COUNTER:0:U

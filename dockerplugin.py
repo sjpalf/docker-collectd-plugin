@@ -95,8 +95,11 @@ class BlkioStats(Stats):
                 device_stats[k].append(value['value'])
 
             for type_instance, values in device_stats.items():
-                if len(values) == 5:
+                if len(values) == 6:
                     cls.emit(container, 'blkio', values,
+                             type_instance=type_instance, t=t)
+                elif len(values) == 5:
+                    cls.emit(container, 'blkio.old', values,
                              type_instance=type_instance, t=t)
                 elif len(values) == 1:
                     # For some reason, some fields contains only one value and
